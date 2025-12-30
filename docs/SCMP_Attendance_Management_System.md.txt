@@ -1,0 +1,225 @@
+﻿COLLEGE OF ENGINEERING 
+DEPARTMENT OF SOFTWARE ENGINEERING 
+COURSE:Software configuration management 
+Title: Attendance Management System
+SECTION: B 
+
+
+GROUP 3                                  
+Group members                             ID.No 
+1. Betselot Tesfa                        ETS0327/14 
+2. Bezawit Edilu                            ETS0334/14 
+3. Diana Luel                                ETS0490/14 
+4. Etsub Girma                        ETS0563/14 
+5. Eyerusalem Rufael                        ETS0572/14 
+6. Frezer Metasebia                         ETS0679/14                    
+                
+                                           
+                       
+             
+        
+                                    SUBMITTED TO:  Lecturer Yibrah G.(MSc.)                                
+SUBMISSION DATE: December 30, 2025
+1. INTRODUCTION
+1.1 Purpose
+The purpose of this Software Configuration Management Plan (SCMP) is to define the configuration management processes, roles, tools, and controls applied to the Attendance Management System project. This document ensures that all project artifacts are systematically identified, controlled, tracked, and audited throughout the software lifecycle.This SCMP follows standard SCM best practices aligned with IEEE 828 guidelines 
+1.2 Scope
+This SCMP applies to all configuration items (CIs) produced during the development of the Attendance Management System, including:
+* Project documentation
+* Source code files
+* JSON data storage files
+* Repository structure
+* Change requests
+* Baseline records
+* Release artifacts
+1.3 Project Overview
+The Attendance Management System is an simplified web based application with the following core functional capability:
+* User login (basic authentication)
+* Dashboard displaying system options
+* Attendance marking functionality
+* JSONbased data storage
+The system is implemented using simple web technologies, including HTML, CSS, and JavaScript, with data stored in a lightweight JSON file. Project documentation is created using Google Docs to facilitate collaborative drafting and review. 
+2. SCM MANAGEMENT
+2.1 SCM Objectives
+The objectives of SCM for this project are:
+* To uniquely identify and manage configuration items
+* To control changes systematically
+* To maintain baselines at defined milestones
+* To provide configuration status visibility
+* To ensure auditability and traceability
+2.2 Roles and Responsibilities
+Group Member Information
+Name
+	Student ID
+	Role 
+	Responsibilities
+	Betselot Tesfa
+	ETS0327/14
+	Project Manager
+	Overall project oversight and approvals
+	Bezawit Edilu
+	ETS0334/14
+	SCM Manager
+	SCM planning, CI control, audits
+	Diana Luel
+	ETS0490/14
+	Developer
+	Code development and unit changes
+	Etsub Girma
+	ETS0563/14
+	QA Engineer
+	Verification and validation
+	Eyerusalem Rufael
+	ETS0572/14
+	Change Control Board Member
+	Change evaluation and approval
+	Frezer Metasebia
+	ETS0679/14
+	Release Manager
+	Packaging and version releases
+	3. CONFIGURATION IDENTIFICATION
+3.1 Configuration Items (CIs)
+Configuration Items include all artifacts that require control. These are grouped into:
+* Documents
+* Source Code
+* Data Files
+* Repository Assets
+Each CI is uniquely named, versioned, and tracked.
+3.2 CI Naming Conventions
+CI Type
+	Naming Convention
+	Example
+	Documents
+	<DocName>_<Project>_vX.X
+	SCMP_AMS_v1.0
+	Source Code
+	lowercase_with_underscores
+	login.html
+	JSON Data
+	descriptive_name.json
+	attendance_data.json
+	Change Requests
+	CRXXX
+	CR001
+	
+
+3.3 Versioning Rules
+The project follows semantic versioning:
+* Major: Significant functional milestone
+* Minor: Approved change requests
+* Patch: Documentation or formatting fixes
+Example: v1.0, v1.1
+3.4 Git Branching Strategy
+The project follows a simple and controlled Git branching strategy to support parallel development while maintaining configuration stability. The main branch represents the latest approved and stable baseline. All development activities are conducted in isolated feature branches to prevent direct modification of the stable configuration.
+The following branches are used:
+* main: Contains approved baselines and releaseready artifacts
+* Feature login: Development and updates related to login functionality
+* Feature attendance: Development and updates related to attendance marking logic
+Feature branches are merged into the main branch only after review and approval, ensuring traceability, auditability, and configuration integrity.
+4. CONFIGURATION CONTROL
+4.1 Change Control Process
+All changes must follow a formal change control procedure:
+1. Change Request (CR) submission
+2. Impact analysis
+3. Change Control Board (CCB) review and approval
+4. Implementation
+5. Verification
+6. Baseline update (if applicable)
+Unapproved changes are not permitted.
+4.2 Change Control Board (CCB)
+The Change Control Board consists of:
+* Project Manager
+* SCM Manager
+* QA Engineer
+The CCB ensures that changes do not negatively affect scope, schedule, or baseline integrity.
+4.3 Change Classification
+All change requests are classified to ensure appropriate evaluation and approval. The project recognizes the following change categories:
+* Minor Change: Documentation updates, formatting corrections, or small user interface adjustments with no functional impact.
+* Major Change: Functional modifications affecting attendance logic, data handling, or system behavior.
+* Emergency Change: Critical fixes required to resolve system failures or data inconsistencies.
+Change classification assists the Change Control Board (CCB) in determining approval priority and implementation strategy.
+5. CONFIGURATION STATUS ACCOUNTING
+Configuration status accounting ensures that:
+* CI versions are traceable
+* Change implementation status is visible
+* Baselines are documented
+Status information is maintained through:
+* Configuration Item Register
+* Change Log
+* Git commit history
+6. BASELINE MANAGEMENT
+6.1 Baseline Definition
+A baseline represents a formally approved configuration snapshot.
+Planned baselines include:
+* BL1: Initial repository setup and documentation
+* BL2: Working prototype with approved change requests implemented
+6.2 Baseline Control
+Baselines are:
+* Tagged in Git
+* Documented formally
+* Modified only through approved change requests
+7. CONFIGURATION AUDITS
+7.1 Audit Types
+Two audit types are conducted:
+* Physical Configuration Audit (PCA)
+ Verifies the presence, correctness, and version consistency of configuration items.
+* Functional Configuration Audit (FCA)
+ Confirms that functional requirements are correctly implemented and traceable.
+Audit results are documented in the Configuration Audit Report.
+8. TOOLS AND ENVIRONMENT
+Tool
+	Purpose
+	Git
+	Version control and change tracking
+	GitHub
+	Remote repository hosting
+	Visual Studio Code
+	Source code development
+	Google Docs
+	Collaborative document drafting and review
+	HTML / CSS / JavaScript
+	Simple web based user interface
+	JSON
+	Lightweight data storage for attendance records
+	
+
+9. SCM STANDARDS AND REFERENCES
+   * IEEE 828  Software Configuration Management
+   * ISO/IEC 10007 -  Configuration Management
+   * Academic SCM best practices
+10. APPROVAL
+Name
+	Role
+	
+
+	
+
+	Project Manager
+	Approval Authority
+	
+
+	
+
+	SCM Manager
+	SCM Approval
+	
+
+	
+
+	Document Control Information
+Item
+	Description
+	Document Title
+	Software Configuration Management Plan
+	Project Name
+	Attendance Management System
+	Document ID
+	SCMPAMS001
+	Version
+	1.0
+	Date
+	2025
+	Approved By
+	Project Supervisor
+	Status
+	Approved

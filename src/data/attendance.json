@@ -1,0 +1,15 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Ali",
+      "status": "Absent"
+    },
+    {
+      "id": 2,
+      "name": "Sara",
+      "status": "Absent"
+    }
+  ],
+  "lastUpdated": ""
+}

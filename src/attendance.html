@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mark Attendance</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Attendance</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<div class="card wide">
     <h2>Mark Attendance</h2>
 
-    <label>Student Name:</label><br>
-    <input type="text" id="studentName"><br><br>
+    <div class="form-row">
+        <input type="text" id="studentName" placeholder="Enter student name">
+        <button onclick="markPresent()">Present</button>
+        <button class="absent" onclick="markAbsent()">Absent</button>
+    </div>
 
-    <button onclick="markAttendance()">Mark Present</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="attendanceTable"></tbody>
+    </table>
 
     <p id="message"></p>
+</div>
 
-    <script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
